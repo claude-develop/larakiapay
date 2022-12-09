@@ -1,0 +1,38 @@
+{
+    "name": "claude-develop/larakiapay",
+    "description": "Larakiapay is Kkiapay package for laravel based on Kkiapay source package",
+    "autoload": {
+        "psr-4": {
+            "Larakiapay\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Larakiapay\\Tests\\":"tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Claudye",
+            "email": "dev.claudy@gmail.com"
+        }
+    ],
+    "require": {
+        "php":"^7.3 || ^8.0",
+        "kkiapay/kkiapay-php": "dev-master"
+    },
+    "require-dev": {
+        "orchestra/testbench": "5.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "extra": {
+        "laravel":{
+            "providers":[
+                "Larakiapay\\Providers\\LarakiapayServiceProvider"
+            ]
+        }
+    }
+}
