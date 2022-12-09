@@ -1,6 +1,7 @@
 {
     "name": "claude-develop/larakiapay",
     "description": "Larakiapay is Kkiapay package for laravel based on Kkiapay source package",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Larakiapay\\": "src/"
